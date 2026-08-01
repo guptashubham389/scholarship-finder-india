@@ -436,10 +436,28 @@ Do these while Claude is building. They compete with nothing.
 
 | State | M1 pipeline | M2 waitlist | M3 core flow | M4 quality |
 |---|---|---|---|---|
-| Implemented | ✅ | ☐ | ☐ | ☐ |
-| Working locally | ✅ | ☐ | ☐ | ☐ |
-| **Deployed & verified at public URL** | ✅ | ☐ | ☐ | ☐ |
-| **Metrics moving** | — | ☐ | ☐ | — |
+| Implemented | ✅ | ✅ | ☐ | ☐ |
+| Working locally | ✅ | ✅ | ☐ | ☐ |
+| **Deployed & verified at public URL** | ✅ | ✅ | ☐ | ☐ |
+| **Metrics moving** | — | ⏳ awaiting first real email | ☐ | — |
+
+**Convex (verified 1 Aug, 16:05 IST):** cloud deployment `https://rugged-ant-869.convex.cloud`
+· dashboard `https://dashboard.convex.dev/d/rugged-ant-869` · `NEXT_PUBLIC_CONVEX_URL`
+set on Vercel for production, preview and development.
+
+> ⚠️ **Convex trap that nearly shipped:** first run created a **local** deployment on
+> `127.0.0.1:3210`. It works perfectly on this laptop and saves *nothing* from any other
+> device — the live site would have silently dropped every signup. Fixed with
+> `--dev-deployment cloud`. **If `.env.local` ever shows `127.0.0.1`, production is
+> broken.** Check it before launching and again before Sunday's submission.
+
+**Mutation smoke tests passed:** valid email saves · duplicate returns `alreadyJoined`
+(case-insensitive) · garbage input rejected server-side. Test row purged —
+`waitlist: 0, signups: 0`, so the count starts honest.
+
+**Metric integrity tools:** `npx convex run admin:counts` (read counts) ·
+`npx convex run admin:purgeBySource '{"source":"smoke-test"}'` (delete test rows).
+Run `admin:counts` before screenshotting on Sunday.
 
 **Checkpoint questions — ask at every milestone:**
 1. Does the core flow still work at the live URL?
