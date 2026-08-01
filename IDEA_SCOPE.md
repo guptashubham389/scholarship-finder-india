@@ -443,7 +443,14 @@ Do these while Claude is building. They compete with nothing.
 
 **Live scoreboard (1 Aug, 16:20 IST):** `waitlist: 4` (3 excluding builder) ·
 `signups: 1` — a full five-question run with profile data and result captured.
+**Confirmed by the builder as NOT him** — a genuine third-party user, so it counts.
 Verify `admin:counts` again before the Sunday screenshot.
+
+> 📊 **Strategic note on the signup ladder.** Signups L2 = "1 to 50", L3 = "51 to 250".
+> Signup #2 through #50 are worth **exactly zero additional points**. #51 is worth
+> **+20**. So the only two rational strategies are: (a) push hard for 51+, or (b) accept
+> L2 at 20 pts and spend the remaining effort on the ~20 points of writing-only
+> parameters, which cost no build time. Do not drift in between.
 
 **M3 shipped:** `/find` — five questions (year · state · income · category · gender),
 nine verified scholarships, sorted by deadline urgency, email capture into `signups`.
