@@ -1,3 +1,5 @@
+import { WaitlistForm } from "./WaitlistForm";
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-[#0d0f12] text-white flex items-center justify-center px-6">
@@ -17,25 +19,10 @@ export default function Home() {
           scholarship matches delivered to you.
         </p>
 
-        <form className="flex flex-col sm:flex-row gap-3">
-          <input
-            type="email"
-            placeholder="your@email.com"
-            className="flex-1 rounded-lg bg-white/5 border border-white/15 px-4 py-3
-                       text-white placeholder:text-white/35 outline-none
-                       focus:border-amber-400"
-          />
-          <button
-            type="submit"
-            className="rounded-lg bg-amber-400 px-6 py-3 font-medium text-black
-                       hover:bg-amber-300 transition"
-          >
-            Notify me
-          </button>
-        </form>
+        <WaitlistForm />
 
         <p className="mt-6 text-sm text-white/40">
-          Milestone 1 — pipeline check. The form is not wired up yet.
+          Built by a student who missed scholarships he qualified for.
         </p>
       </div>
     </main>
