@@ -6,12 +6,10 @@ export default function Home() {
           For engineering students in India
         </p>
 
-        {/* ---------------------------------------------------------------
-            COPY PLACEHOLDER — Shubham writes this himself.
-            Handbook rule: "write it yourself, in your words. do not use ai."
-            --------------------------------------------------------------- */}
+        {/* Copy written by Shubham. Do not let AI rewrite this. */}
         <h1 className="text-4xl sm:text-5xl font-semibold leading-tight mb-6">
-          [ YOUR HEADLINE HERE ]
+          You could already qualify for thousands in scholarships&mdash;and never
+          know it.
         </h1>
 
         <p className="text-lg text-white/70 mb-10">
