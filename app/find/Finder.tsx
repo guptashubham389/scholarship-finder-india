@@ -27,6 +27,52 @@ const GENDERS = [
   { label: "Other", value: "other" },
 ] as const;
 
+const SITE = "https://scholarships-india.vercel.app/find";
+
+function ShareRow({ total, count }: { total: number; count: number }) {
+  const [copied, setCopied] = useState(false);
+
+  const text =
+    `I just found out I qualify for ${formatINR(total)} in scholarships ` +
+    `across ${count} ${count === 1 ? "scheme" : "schemes"} I didn't know existed. ` +
+    `Took 5 questions. Check yours: ${SITE}`;
+
+  return (
+    <div className="rounded-xl border border-white/15 bg-white/5 p-5">
+      <p className="font-medium mb-1">Someone you know is missing this money.</p>
+      <p className="text-sm text-white/60 mb-4">
+        Most students never find out these exist. Takes one message.
+      </p>
+      <div className="flex flex-col sm:flex-row gap-3">
+        <a
+          href={`https://wa.me/?text=${encodeURIComponent(text)}`}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex-1 rounded-lg bg-[#25D366] px-5 py-3 text-center
+                     font-medium text-black hover:brightness-110 transition"
+        >
+          Share on WhatsApp
+        </a>
+        <button
+          onClick={async () => {
+            try {
+              await navigator.clipboard.writeText(text);
+              setCopied(true);
+              setTimeout(() => setCopied(false), 2000);
+            } catch {
+              setCopied(false);
+            }
+          }}
+          className="rounded-lg border border-white/20 px-5 py-3 font-medium
+                     text-white/80 hover:border-white/40 transition"
+        >
+          {copied ? "Copied ✓" : "Copy link"}
+        </button>
+      </div>
+    </div>
+  );
+}
+
 const label = "block text-sm font-medium text-white/60 mb-2";
 const field =
   "w-full rounded-lg bg-white/5 border border-white/15 px-4 py-3 text-white " +
@@ -290,6 +336,10 @@ export function Finder() {
           </div>
         ))}
       </div>
+
+      {/* Share — the number is the most forwardable thing here. Without this
+          it dies on screen and every user is a dead end. */}
+      {r.count > 0 && <ShareRow total={r.total} count={r.guaranteedCount} />}
 
       {/* Email capture — this is what makes a signup, not just a visit. */}
       {saveState === "done" ? (
