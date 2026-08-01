@@ -13,8 +13,8 @@ export default function Home() {
         </h1>
 
         <p className="text-lg text-white/70 mb-10">
-          [ YOUR SUBHEADING HERE — what you missed out on, and what you&apos;re
-          building so nobody else does. ]
+          Stop relying on luck and endless Google searches. Get personalized
+          scholarship matches delivered to you.
         </p>
 
         <form className="flex flex-col sm:flex-row gap-3">
