@@ -20,7 +20,19 @@
 | Time to cutoff | **~34 hours wall-clock** |
 | Real focused build time available | **Under 4 hours** |
 | Handbook milestone already missed | Waitlist launch (was due Fri 11am) |
-| Current state | Empty folder. No repo. No deploy. No page. |
+| Current state | ✅ M0 gate passed · ✅ M1 pipeline live |
+
+**Live artifacts (verified 1 Aug 2026, 11:20 IST):**
+- 🌐 **https://scholarshipfinder-india.vercel.app** — HTTP 200, public
+- 🌐 https://my-first-project-two-peach.vercel.app — backup production alias
+- 📦 **https://github.com/guptashubham389/scholarship-finder-india** — public
+- Auto-deploy wired: push to `main` → Vercel builds
+
+> ⚠️ **Found and fixed:** the Vercel team had `ssoProtection: all_except_custom_domains`
+> switched on, which puts a login wall in front of the site — strangers would have hit
+> a sign-in screen instead of the product. Disabled via `vercel project protection
+> disable --sso`. **Re-check this before submitting** — if a deploy ever turns it back
+> on, the judges cannot open the URL and the submission is worthless.
 
 **Consequence:** every hour is allocated below. Nothing gets added that is not in this file.
 
@@ -165,6 +177,32 @@ Rules:
 | <4 verify | 🔴 **STOP.** Reframe as "Deadline Tracker" — fewer schemes, urgency is the product. Update this doc before building. |
 
 **Stop condition: 20 minutes. Hard.** If unresolved, take the ⚠️ path and move.
+
+### ✅ GATE RESULT — PASSED (1 Aug 2026)
+
+Shubham opened AICTE, Reliance Foundation and Kotak Education Foundation officially
+and confirmed the schemes are live and the deadlines are correct.
+
+**Verified pool (10 usable):** AICTE Pragati · AICTE Saksham · Central Sector Scheme
+(CSSS) · Post Matric SC · Post Matric ST · Post Matric OBC · Reliance Foundation UG ·
+Kotak Kanya · Sitaram Jindal · AICTE Swanath *(low confidence — verify or drop)*.
+**Excluded:** HDFC Parivartan ECSS — 2026-27 cycle not open yet.
+
+**Deadline spread is healthy:** Kotak Kanya 20 Aug (19 days) → NSP schemes 31 Oct
+(91 days). The NSP window opened 1 June and runs to 31 Oct, so the "closes in N days"
+mechanic has real urgency to work with.
+
+**⚠️ Finding that changes the design — the total ₹ swings hard on three fields:**
+
+| Test profile | Matches | Total |
+|---|---|---|
+| 2nd yr, Maharashtra, ₹4L, OBC, **male** | 2 | **~₹36,000** |
+| 2nd yr, Maharashtra, ₹1.4L, OBC, **female** | 4 | **~₹1,00,000+** |
+
+**Gender, category and family income are the biggest swing factors** — all three are
+non-negotiable in the five questions. And the low-match screen is a *common* state for
+general-category higher-income male students, not an edge case. **Design it properly
+(M3 acceptance test #3), or the product feels broken for a large share of users.**
 
 ---
 
@@ -390,9 +428,9 @@ Do these while Claude is building. They compete with nothing.
 
 | State | M1 pipeline | M2 waitlist | M3 core flow | M4 quality |
 |---|---|---|---|---|
-| Implemented | ☐ | ☐ | ☐ | ☐ |
-| Working locally | ☐ | ☐ | ☐ | ☐ |
-| **Deployed & verified at public URL** | ☐ | ☐ | ☐ | ☐ |
+| Implemented | ✅ | ☐ | ☐ | ☐ |
+| Working locally | ✅ | ☐ | ☐ | ☐ |
+| **Deployed & verified at public URL** | ✅ | ☐ | ☐ | ☐ |
 | **Metrics moving** | — | ☐ | ☐ | — |
 
 **Checkpoint questions — ask at every milestone:**
