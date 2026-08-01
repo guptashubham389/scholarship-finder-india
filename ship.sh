@@ -11,7 +11,7 @@
 
 set -euo pipefail
 
-PUBLIC_URL="scholarshipfinder-india.vercel.app"
+PUBLIC_URL="scholarships-india.vercel.app"
 MSG="${1:-ship}"
 
 echo "==> committing"

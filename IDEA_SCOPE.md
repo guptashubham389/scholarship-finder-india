@@ -22,11 +22,19 @@
 | Handbook milestone already missed | Waitlist launch (was due Fri 11am) |
 | Current state | ✅ M0 gate passed · ✅ M1 pipeline live |
 
-**Live artifacts (verified 1 Aug 2026, 11:20 IST):**
-- 🌐 **https://scholarshipfinder-india.vercel.app** — HTTP 200, public
-- 🌐 https://my-first-project-two-peach.vercel.app — backup production alias
+**Live artifacts (verified 1 Aug 2026, 12:05 IST):**
+- 🌐 **https://scholarships-india.vercel.app** ← **THE public URL. Use this one everywhere.**
+- 🌐 https://my-first-project-two-peach.vercel.app — auto-following backup, always current
 - 📦 **https://github.com/guptashubham389/scholarship-finder-india** — public
-- Auto-deploy wired: push to `main` → Vercel builds
+- 🚀 **Deploy with `./ship.sh "what changed"`** — never `git push` alone
+
+> ⚠️ **Why `ship.sh` exists — this would have cost the submission.**
+> `scholarships-india.vercel.app` is a *manual alias*, and a manual alias stays
+> pinned to the deployment it was set on. Push new code and the site appears to
+> update while the link you gave students still serves the old build. Silent
+> failure, no error anywhere. `ship.sh` re-points the alias after every deploy and
+> **fails loudly if the public URL is not HTTP 200.** Use it every time.
+> *(`scholarshipfinder-india.vercel.app` is dead — stuck at 403. Do not use it.)*
 
 > ⚠️ **Found and fixed:** the Vercel team had `ssoProtection: all_except_custom_domains`
 > switched on, which puts a login wall in front of the site — strangers would have hit
