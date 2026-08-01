@@ -18,6 +18,19 @@ export const counts = internalQuery({
   },
 });
 
+export const purgeSignupByEmail = internalMutation({
+  args: { email: v.string() },
+  handler: async (ctx, args) => {
+    const row = await ctx.db
+      .query("signups")
+      .withIndex("by_email", (q) => q.eq("email", args.email.toLowerCase()))
+      .first();
+    if (!row) return { deleted: 0 };
+    await ctx.db.delete(row._id);
+    return { deleted: 1 };
+  },
+});
+
 export const purgeBySource = internalMutation({
   args: { source: v.string() },
   handler: async (ctx, args) => {

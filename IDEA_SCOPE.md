@@ -436,10 +436,29 @@ Do these while Claude is building. They compete with nothing.
 
 | State | M1 pipeline | M2 waitlist | M3 core flow | M4 quality |
 |---|---|---|---|---|
-| Implemented | ✅ | ✅ | ☐ | ☐ |
-| Working locally | ✅ | ✅ | ☐ | ☐ |
-| **Deployed & verified at public URL** | ✅ | ✅ | ☐ | ☐ |
-| **Metrics moving** | — | ⏳ awaiting first real email | ☐ | — |
+| Implemented | ✅ | ✅ | ✅ | ☐ |
+| Working locally | ✅ | ✅ | ✅ | ☐ |
+| **Deployed & verified at public URL** | ✅ | ✅ | ✅ | ☐ |
+| **Metrics moving** | — | ✅ 3 real emails | ✅ 1 completed flow | — |
+
+**Live scoreboard (1 Aug, 16:20 IST):** `waitlist: 4` (3 excluding builder) ·
+`signups: 1` — a full five-question run with profile data and result captured.
+Verify `admin:counts` again before the Sunday screenshot.
+
+**M3 shipped:** `/find` — five questions (year · state · income · category · gender),
+nine verified scholarships, sorted by deadline urgency, email capture into `signups`.
+
+> ⚠️ **Bug the test suite caught before users did:** the headline showed **₹0** to a
+> student with three matching scholarships. Cause: anything carrying a footnote was
+> excluded from the total, including notes already handled by the eligibility rules
+> ("first-year only"). Fixed with an explicit `requiresUnverified` flag — only a
+> disability certificate or a Class 12 percentage is held back now, shown separately
+> with a ⚠ rather than silently inflating the number. **The headline says "at least"
+> and never counts money the student may not be able to claim.**
+
+**Regression test:** `npx tsx scripts/test-match.ts` — five profiles, asserts no closed
+scholarship is shown, sorting is by urgency, income/gender/category/year caps are never
+violated, and the headline excludes conditionals. **Re-run before submitting.**
 
 **Convex (verified 1 Aug, 16:05 IST):** cloud deployment `https://rugged-ant-869.convex.cloud`
 · dashboard `https://dashboard.convex.dev/d/rugged-ant-869` · `NEXT_PUBLIC_CONVEX_URL`
