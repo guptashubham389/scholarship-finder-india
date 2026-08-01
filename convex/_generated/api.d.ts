@@ -9,6 +9,7 @@
  */
 
 import type * as admin from "../admin.js";
+import type * as signups from "../signups.js";
 import type * as waitlist from "../waitlist.js";
 
 import type {
@@ -19,6 +20,7 @@ import type {
 
 declare const fullApi: ApiFromModules<{
   admin: typeof admin;
+  signups: typeof signups;
   waitlist: typeof waitlist;
 }>;
 

@@ -1,0 +1,293 @@
+[
+  {
+    "id": "aicte-pragati",
+    "name": "AICTE Pragati Scholarship",
+    "provider": "All India Council for Technical Education",
+    "amountPerYear": 50000,
+    "amountNote": "₹50,000 per year, paid by DBT",
+    "deadline": "2026-10-31",
+    "eligibility": {
+      "gender": [
+        "female"
+      ],
+      "years": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "maxIncome": 800000,
+      "categories": [
+        "any"
+      ],
+      "states": [
+        "ALL"
+      ]
+    },
+    "documentNeeded": "Family income certificate",
+    "condition": null,
+    "sourceUrl": "https://www.aicte.gov.in/",
+    "applyUrl": "https://scholarships.gov.in/",
+    "verifiedOn": "2026-08-01",
+    "confidence": "high",
+    "requiresUnverified": false
+  },
+  {
+    "id": "aicte-saksham",
+    "name": "AICTE Saksham Scholarship",
+    "provider": "All India Council for Technical Education",
+    "amountPerYear": 50000,
+    "amountNote": "₹50,000 per year, paid by DBT",
+    "deadline": "2026-10-31",
+    "eligibility": {
+      "gender": [
+        "any"
+      ],
+      "years": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "maxIncome": 800000,
+      "categories": [
+        "any"
+      ],
+      "states": [
+        "ALL"
+      ]
+    },
+    "documentNeeded": "Disability certificate (40% or more) + income certificate",
+    "condition": "Only if you have a certified disability of 40% or more",
+    "sourceUrl": "https://www.aicte.gov.in/",
+    "applyUrl": "https://scholarships.gov.in/",
+    "verifiedOn": "2026-08-01",
+    "confidence": "high",
+    "requiresUnverified": true
+  },
+  {
+    "id": "csss",
+    "name": "Central Sector Scheme of Scholarships",
+    "provider": "Ministry of Education",
+    "amountPerYear": 12000,
+    "amountNote": "₹12,000/yr for first 3 years, ₹20,000/yr in years 4 and 5",
+    "deadline": "2026-10-31",
+    "eligibility": {
+      "gender": [
+        "any"
+      ],
+      "years": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "maxIncome": 450000,
+      "categories": [
+        "any"
+      ],
+      "states": [
+        "ALL"
+      ]
+    },
+    "documentNeeded": "Class 12 marksheet + income certificate",
+    "condition": "Only if you scored 80% or above in Class 12",
+    "sourceUrl": "https://scholarships.gov.in/",
+    "applyUrl": "https://scholarships.gov.in/",
+    "verifiedOn": "2026-08-01",
+    "confidence": "medium",
+    "requiresUnverified": true
+  },
+  {
+    "id": "post-matric-sc",
+    "name": "Post Matric Scholarship for SC Students",
+    "provider": "Ministry of Social Justice and Empowerment",
+    "amountPerYear": 13500,
+    "amountNote": "Maintenance allowance, PLUS full course fee reimbursement — the real total is usually much higher and varies by state",
+    "deadline": "2026-10-31",
+    "eligibility": {
+      "gender": [
+        "any"
+      ],
+      "years": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "maxIncome": 250000,
+      "categories": [
+        "SC"
+      ],
+      "states": [
+        "ALL"
+      ]
+    },
+    "documentNeeded": "Caste certificate + income certificate",
+    "condition": null,
+    "sourceUrl": "https://scholarships.gov.in/",
+    "applyUrl": "https://scholarships.gov.in/",
+    "verifiedOn": "2026-08-01",
+    "confidence": "medium",
+    "requiresUnverified": false
+  },
+  {
+    "id": "post-matric-st",
+    "name": "Post Matric Scholarship for ST Students",
+    "provider": "Ministry of Tribal Affairs",
+    "amountPerYear": 13500,
+    "amountNote": "Maintenance allowance, PLUS full course fee reimbursement — the real total is usually much higher and varies by state",
+    "deadline": "2026-10-31",
+    "eligibility": {
+      "gender": [
+        "any"
+      ],
+      "years": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "maxIncome": 250000,
+      "categories": [
+        "ST"
+      ],
+      "states": [
+        "ALL"
+      ]
+    },
+    "documentNeeded": "Caste certificate + income certificate",
+    "condition": null,
+    "sourceUrl": "https://scholarships.gov.in/",
+    "applyUrl": "https://scholarships.gov.in/",
+    "verifiedOn": "2026-08-01",
+    "confidence": "medium",
+    "requiresUnverified": false
+  },
+  {
+    "id": "post-matric-obc",
+    "name": "Post Matric Scholarship for OBC Students",
+    "provider": "Ministry of Social Justice and Empowerment",
+    "amountPerYear": 13500,
+    "amountNote": "Maintenance allowance, PLUS course fee reimbursement — varies by state",
+    "deadline": "2026-10-31",
+    "eligibility": {
+      "gender": [
+        "any"
+      ],
+      "years": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "maxIncome": 150000,
+      "categories": [
+        "OBC"
+      ],
+      "states": [
+        "ALL"
+      ]
+    },
+    "documentNeeded": "Caste certificate + income certificate",
+    "condition": null,
+    "sourceUrl": "https://scholarships.gov.in/",
+    "applyUrl": "https://scholarships.gov.in/",
+    "verifiedOn": "2026-08-01",
+    "confidence": "medium",
+    "requiresUnverified": false
+  },
+  {
+    "id": "reliance-foundation-ug",
+    "name": "Reliance Foundation Undergraduate Scholarship",
+    "provider": "Reliance Foundation",
+    "amountPerYear": 50000,
+    "amountNote": "Up to ₹2,00,000 across the full course — shown here as a per-year figure",
+    "deadline": "2026-10-15",
+    "eligibility": {
+      "gender": [
+        "any"
+      ],
+      "years": [
+        1
+      ],
+      "maxIncome": 1500000,
+      "categories": [
+        "any"
+      ],
+      "states": [
+        "ALL"
+      ]
+    },
+    "documentNeeded": "Class 12 marksheet + admission proof + income proof",
+    "condition": "First-year undergraduate students only",
+    "sourceUrl": "https://www.scholarships.reliancefoundation.org/UG_Scholarship.aspx",
+    "applyUrl": "https://www.scholarships.reliancefoundation.org/UG_Scholarship.aspx",
+    "verifiedOn": "2026-08-01",
+    "confidence": "high",
+    "requiresUnverified": false
+  },
+  {
+    "id": "kotak-kanya",
+    "name": "Kotak Kanya Scholarship",
+    "provider": "Kotak Education Foundation",
+    "amountPerYear": 150000,
+    "amountNote": "Up to ₹1,50,000 per year",
+    "deadline": "2026-08-20",
+    "eligibility": {
+      "gender": [
+        "female"
+      ],
+      "years": [
+        1
+      ],
+      "maxIncome": 300000,
+      "categories": [
+        "any"
+      ],
+      "states": [
+        "ALL"
+      ]
+    },
+    "documentNeeded": "Class 12 marksheet (75%+) + income certificate + admission proof",
+    "condition": "First-year students who scored 75% or above in Class 12",
+    "sourceUrl": "https://www.kotakeducationfoundation.org/kotak-kanya-scholarship",
+    "applyUrl": "https://www.kotakeducationfoundation.org/kotak-kanya-scholarship",
+    "verifiedOn": "2026-08-01",
+    "confidence": "high",
+    "requiresUnverified": true
+  },
+  {
+    "id": "sitaram-jindal",
+    "name": "Sitaram Jindal Foundation Scholarship",
+    "provider": "Sitaram Jindal Foundation",
+    "amountPerYear": 24000,
+    "amountNote": "Around ₹2,000 per month for undergraduate engineering",
+    "deadline": "2026-08-20",
+    "eligibility": {
+      "gender": [
+        "any"
+      ],
+      "years": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "maxIncome": 400000,
+      "categories": [
+        "any"
+      ],
+      "states": [
+        "ALL"
+      ]
+    },
+    "documentNeeded": "Previous exam marksheet + income proof",
+    "condition": "Applications accepted year-round; this is the next review cut-off",
+    "sourceUrl": "https://www.sitaramjindalfoundation.org/",
+    "applyUrl": "https://www.sitaramjindalfoundation.org/",
+    "verifiedOn": "2026-08-01",
+    "confidence": "medium",
+    "requiresUnverified": false
+  }
+]
