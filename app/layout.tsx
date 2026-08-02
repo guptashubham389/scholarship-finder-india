@@ -14,9 +14,25 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://scholarships-india.vercel.app"),
   title: "Scholarship Finder India — find what you already qualify for",
   description:
     "Answer five questions and find out how much scholarship money you qualify for, and which deadline closes first.",
+  openGraph: {
+    title: "You could already qualify for thousands in scholarships",
+    description:
+      "Five questions. Find out what you qualify for and which deadline closes first. Free, no account.",
+    url: "https://scholarships-india.vercel.app",
+    siteName: "Scholarship Finder India",
+    locale: "en_IN",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "You could already qualify for thousands in scholarships",
+    description:
+      "Five questions. Find out what you qualify for and which deadline closes first.",
+  },
 };
 
 export default function RootLayout({
